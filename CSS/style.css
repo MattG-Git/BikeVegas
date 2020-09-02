@@ -1,8 +1,4 @@
 
-img {
-    width: 200px;
-}
-
 
 #footer-icon {
     color: white;
@@ -12,16 +8,16 @@ img {
     color: white;
 }
 
-#map {
-    margin: 0;
-    padding: 0;
-    height: 500px;
-    width: 100%;
-}
 
 .card {
     padding: 5px;
 }
+
+.rmlt_map {
+    height: 500px;
+    border: solid #768F25;
+}
+
 
 .jumbotron {
     margin:0;

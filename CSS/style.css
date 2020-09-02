@@ -1,0 +1,48 @@
+
+img {
+    width: 200px;
+}
+
+
+#footer-icon {
+    color: white;
+}
+
+#footer-contact {
+    color: white;
+}
+
+#map {
+    margin: 0;
+    padding: 0;
+    height: 500px;
+    width: 100%;
+}
+
+.card {
+    padding: 5px;
+}
+
+.jumbotron {
+    margin:0;
+    background-color: #acbb7c;
+    Color: white;
+    height: 175px;
+}
+
+.intro {
+    padding: 50px;
+}
+
+.navbar {
+    background-color: #768F25;
+}
+
+.site-footer {
+    background-color: #768F25; 
+    padding: 10px;
+}
+
+.footer-txt {
+    color: white;
+}

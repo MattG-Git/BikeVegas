@@ -20,6 +20,7 @@
    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
    crossorigin=""></script>
+
     <title>River Mountain Loop Trail</title>
 
 </head>
@@ -116,23 +117,12 @@
         </div>
     </footer>
 
-    <script>
-        const myMap = L.map('mapid').setView([36.0128, -114.92242], 17);
-
-        const attribution = '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors';
-
-        const tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-        const tiles = L.tileLayer(tileUrl, {attribution});
-        tiles.addTo(myMap);
-
-        const marker = L.marker([36.0128, -114.92242]).addTo(myMap);
-    </script>
 
 <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+<script src="JS/RMLT_Map.js"></script>
 </body>
 
 </html>

@@ -11,13 +11,22 @@
     <!-- Additional CSS must be placed after Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+        <!--CSS style sheet from Leafletsjs.com-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+
+   <!-- JS script file from Leaflets.com to make the map work, must come after the leaflets css file link-->
+   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
     <title>River Mountain Loop Trail</title>
 
 </head>
 
 <body>
 
-    <header class="jumbotron jumbotron-fluid">
+    <header class="jumbotron">
         <h1>BikeHenderson</h1>
         <h2>Get out and explore the trails</h2>
     </header>
@@ -43,47 +52,87 @@
         </div>
     </nav>
 
+
+
     <div class="container">
         <div class="container intro ">
             <div class="row row-content align-items-center">
-                <div class="col text-center">
+                <div class="col-sm text-center">
+                    <img class="d-flex mr-3 img-thumbnail pittman_wash_img" src="img/River_MT_Loop.jpg" alt="River Moutain Loop Trail">
                     <h2>River Mountain Loop Trail</h2>
                         <p>The River Mountains Loop Trail is approximately 34 miles in length and surrounds the River Mountains connecting Lake Mead National Recreation Area, Hoover Dam, Henderson, Boulder City and the rest of the Las Vegas Valley, expanding recreational and alternative transportation opportunities for the region’s growing population</p>
                         <h3>Trail Hours of Operation:</h3>    
                         <p>5am-11pm</p>
                         <p>Unlit trails are dawn to dusk.</p>
-                        <img class="rmlt_map" src="img/RMLT_Map.jpg">
                 </div>
             </div>
         </div>
     </div>
 
-        <footer class="site-footer">
-            <div class="container">
-                <div class="row">             
-                    <div class="col-12 col-md-4 text-center">
-                        <h5 class="footer-txt">Social</h5>
-                        <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/" id="footer-icon"><i class="fa fa-instagram"></i></a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/" id="footer-icon"><i class="fa fa-facebook"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/" id="footer-icon"><i class="fa fa-twitter"></i></a>
-                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/" id="footer-icon"><i class="fa fa-youtube"></i></a>
-                    </div>
-                    <div class="col-12 col-md-4 text-center">
-                        <h5 class="footer-txt">Phone</h5>
-                        <a role="button" class="btn btn-link" href="tel:+18885555555" id="footer-contact"><i class="fa fa-phone"></i> 1-888-555-5555</a><br />
-                    </div>
-                    <div class="col-12 col-md-4 text-center">
-                        <h5 class="footer-txt">Email</h5>
-                        <a role="button" class="btn btn-link" href="mailto:info@BikeVegas.com" id="footer-contact"><i class="fa fa-envelope-o"></i> info@BikeVegas.com</a>
-                    </div>                
-                 </div>
+    <table class="Ratings">
+        <thead>
+            <tr>
+                <th colspan="2">Trail Ratings</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="rating_cat">Difficulty:</td>
+                <td class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></i><i class="fa fa-star-o"></i></td>
+            </tr>
+            <tr>
+                <td class="rating_cat"> Pet Friendly:</td>
+                <td class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
+            </tr>
+            <tr>
+                <td class="rating_cat">Grade:</td>
+                <td class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+   <div id="mapid" class="d-none d-sm-block"></div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-12 col-md-4 text-center">
+                    <h5 class="footer-txt">Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/" id="footer-icon"><i class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/" id="footer-icon"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/" id="footer-icon"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/" id="footer-icon"><i class="fa fa-youtube"></i></a>
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <h5 class="footer-txt">Phone</h5>
+                    <a role="button" class="btn btn-link" href="tel:+18885555555" id="footer-contact"><i class="fa fa-phone"></i> 1-888-555-5555</a><br />
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <h5 class="footer-txt">Email</h5>
+                    <a role="button" class="btn btn-link" href="mailto:info@BikeVegas.com" id="footer-contact"><i class="fa fa-envelope-o"></i> info@BikeVegas.com</a>
+                </div>                
             </div>
-        </footer>
+        </div>
+    </footer>
+
+    <script>
+        const myMap = L.map('mapid').setView([36.0128, -114.92242], 17);
+
+        const attribution = '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+
+        const tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+        const tiles = L.tileLayer(tileUrl, {attribution});
+        tiles.addTo(myMap);
+
+        const marker = L.marker([36.0128, -114.92242]).addTo(myMap);
+    </script>
 
 <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

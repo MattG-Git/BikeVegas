@@ -16,9 +16,10 @@
 </head>
 
 <body>
-        <header class="jumbotron jumbotron-fluid">
-            <h1>BikeHenderson</h1>
-            <h2>Get out and explore the trails</h2>
+
+        <header class="jumbotron">
+            <h1 class="jumbo_header">BikeHenderson</h1>
+            <h2 class="jumbo_subheader">Get out and explore the trails</h2>
         </header>
 
         <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
@@ -48,47 +49,54 @@
                     <div class="col text-center">
                         <h2>Popular Henderson Bike Trails</h2>
                             <p>Henderson features one of the most extensive trail systems in the state of Nevada totaling 184.61 miles.</p>
-                            <h3>Trail Hours of Operation:</h3>    
-                            <p>5am-11pm</p>
-                            <p>Unlit trails are dawn to dusk.</p>
+                            
+                            <!-- the weather widget-->
+                            <a class="weatherwidget-io" href="https://forecast7.com/en/36d04n114d98/henderson/?unit=us" data-label_1="Henderson" data-label_2="NV" data-theme="pure" >Henderson NV</a>
+                            <script>
+                            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                            </script>
                     </div>
                 </div>
             </div>
 
-            <div class="container.fluid">
+            <div class="container">
                 <div class="row">
-                        <div class="col-lg">
-                            <div class="card bg-light mb-3" style="width: 18rem;">
-                                <img class="card-img-top" src="/img/River_MT_Loop.jpg" alt="River Mountain Loop Trail">
-                                <div class="card-body">
-                                <h5 class="card-title">River Mountain Loop Trail</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="card-deck">
+                        <div class="card bg-light" style="width: 18rem;">
+                            <img class="card-img-top" src="/img/River_MT_Loop.jpg" alt="River Mountain Loop Trail">
+                            <div class="card-body">
+                            <h5 class="card-title">River Mountain Loop Trail</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <div class="card-footer">
                                 <a href="RMLT.html" class="btn btn-primary">Learn More</a>
-                                </div>
                             </div>
                         </div>
+                        
 
-                        <div class="col-lg">
-                            <div class="card bg-light mb-3" style="width: 18rem;">
-                                <img class="card-img-top" src="/img/Amargosa.jpg" alt="Amargosa Trail">
-                                <div class="card-body">
-                                <h5 class="card-title">Amargosa Trail</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                         <div class="card bg-light" style="width: 18rem;">
+                            <img class="card-img-top" src="/img/Amargosa.jpg" alt="Amargosa Trail">
+                            <div class="card-body">
+                             <h5 class="card-title">Amargosa Trail</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <div class="card-footer">
                                 <a href="Amargosa.html" class="btn btn-primary">Learn More</a>
-                                </div>
                             </div>
                         </div>
+                       
 
-                        <div class="col-lg"> 
-                            <div class="card bg-light mb-3" style="width: 18rem;">
-                                <img class="card-img-top" src="img/Pittman_wash.jpg" alt="Pittman Wash Trail">
-                                <div class="card-body">
-                                <h5 class="card-title">Pittman Wash Trail</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="card bg-light" style="width: 18rem;">
+                            <img class="card-img-top" src="img/Pittman_wash.jpg" alt="Pittman Wash Trail">
+                             <div class="card-body">
+                            <h5 class="card-title">Pittman Wash Trail</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <div class="card-footer">
                                 <a href="Pittman.html" class="btn btn-primary">Learn More</a>
-                                </div>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,4 +1,11 @@
+td {
+    border: 1px solid #768F25;
+}
 
+th {
+    text-align: center;
+    background-color: #768F25;
+}
 
 #footer-icon {
     color: white;
@@ -8,9 +15,31 @@
     color: white;
 }
 
+#mapid {
+    height: 400px;
+    width: 50%;
+    Margin: auto;
+    border: solid #768F25;
+}
+
+.weatherwidget-io {
+    margin-top: 50 px;
+}
+
+.pittman_wash_img {
+    margin-bottom: 10px;
+}
 
 .card {
     padding: 5px;
+}
+
+.card-deck {
+    margin: auto;
+}
+
+.card-footer {
+    text-align: center;
 }
 
 .rmlt_map {
@@ -30,6 +59,33 @@
     padding: 50px;
 }
 
+.Ratings {
+    height: 50px;
+    width: 300px;
+    border: solid #768F25;
+    
+    margin-top: -50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.fa-star {
+    color:rgb(228, 197, 22);
+}
+
+.fa-star-half-o {
+    color:rgb(228, 197, 22);
+}
+
+.fa-star-o {
+    color:rgb(228, 197, 22);
+}
+
+.rating_cat {
+    background-color:#acbb7c;
+}
+
 .navbar {
     background-color: #768F25;
 }
@@ -37,6 +93,7 @@
 .site-footer {
     background-color: #768F25; 
     padding: 10px;
+    margin: 20px 0px;
 }
 
 .footer-txt {

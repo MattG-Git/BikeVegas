@@ -53,6 +53,7 @@ form {
     margin: auto;
 }
 
+
 .card-footer {
     text-align: center;
 }
@@ -108,10 +109,15 @@ form {
     background-color: #768F25;
 }
 
+.filter {
+    background-color: #acbb7c;
+    
+}
+
 .site-footer {
     background-color: #768F25; 
     padding: 10px;
-    margin: 20px 0px;
+    margin: 20px 0px 0px 0px;
 }
 
 .footer-txt {

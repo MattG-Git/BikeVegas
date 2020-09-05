@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>BikeHenderson</title>
+</head>
+
+<body>
+
+        <header class="jumbotron jumbotron-fluid">
+            <h1 class="jumbo_header text-right mr-3">BikeHenderson<i class="fa fa-bicycle fa-lg" id="logo"></i></h1>
+        </header>
+
+        <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#BikeHendersonNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="BikeHendersonNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-arrow-circle-left fa-lg"></i> Trails</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="rmlt.html">River Mountain Loop Trail</a>
+                                <a class="dropdown-item" href="Amargosa.html">Amargosa Trail</a>
+                                <a class="dropdown-item" href="Pittman.html">Pittman Wash Trail</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="bikeshop.html"><i class="fa fa-bicycle fa-lg"></i> Bike Shops</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
+                    </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="container intro ">
+                <div class="row row-content align-items-center">
+                    <div class="col text-center">
+                        <h2>Bike Shops Around Henderson</h2>
+                            <p>Check out a few of our local favorites</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+            <div class="container filter p-3 mb-3">
+                <div class="row">
+                    <div class="col pb-2 text-center">
+                        <h4>Search Filter</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="price col pl-5">
+                        <h6>Price</h6>
+                        <input type="checkbox" id="cost-1" name="low-cost">
+                        <label for="low-cost"><i class="fa fa-usd fa-sm"></i></label> 
+
+                        <div class="row"></div>
+                    
+                        <input type="checkbox" id="cost-2" name="mid-cost">
+                        <label for="mid-cost"><i class="fa fa-usd fa-sm"></i><i class="fa fa-usd fa-sm"></i></label> 
+
+                        <div class="row"></div>
+                    
+                        <input type="checkbox" id="cost-3" name="high-cost">
+                        <label for="high-cost"><i class="fa fa-usd fa-sm"></i><i class="fa fa-usd fa-sm"></i><i class="fa fa-usd fa-sm"></i></label> 
+                    </div>
+    
+                    <div class="col">
+                        <h6 class="rentals">Rentals Available</h6>
+                        <input type="radio" id="rentals-Y" name="rentals">
+                        <label for="rentals">Available</label> 
+
+                        <div class="row"></div>
+
+                        <input type="radio" id="rentals-N" name="rentals">
+                        <label for="rental">Unavailable</label> 
+                    </div>
+
+                    <div class="col">
+                        <h6 class="price">Offers Tours</h6>
+                        <input type="radio" id="tours-Y" name="tours">
+                        <label for="tours">Available</label> 
+
+                        <div class="row"></div>
+                    
+                        <input type="radio" id="tours-N" name="tour">
+                        <label for="tour">Unavailable</label> 
+                    </div>
+                </div>
+            </div>
+        
+            <div class="container text-center">
+                <div class="row mb-3">
+                    <div class="col-md">
+                    <div class="card bg-light" id="mcghies">
+                        <div class="card-body">
+                            <h5 class="card-title">McGhie's Henderson</h5>
+                            <span class="card-text">Price: </span><i class="fa fa-usd fa-sm"></i><i class="fa fa-usd fa-sm"></i><i class="fa fa-usd fa-sm"></i> <br> </br>
+                            <p>Rentals: Available</p>
+                            <p>Tours: Available</p>
+                            <a href="https://www.mcghies.com/" class="btn btn-primary btn-sm">Go somewhere</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md">
+                    <div class="card bg-light" id="rivermountainbike">
+                        <div class="card-body">
+                            <h5 class="card-title">River Mountain Bike Shop</h5>
+                            <span class="card-text">Price: </span><i class="fa fa-usd fa-sm"></i><i class="fa fa-usd fa-sm"></i><br></br>
+                            <p>Rentals: Unavailable</p>
+                            <p>Tours: Unavailable</p>
+                            <a href="https://rivermountainbikeshop.com/" class="btn btn-primary btn-sm">Go somewhere</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card bg-light" id="pedego">
+                        <div class="card-body">
+                            <h5 class="card-title">Pedego Henderson</h5>
+                            <span class="card-text">Price: </span><i class="fa fa-usd fa-sm"></i><i class="fa fa-usd fa-sm"></i><i class="fa fa-usd fa-sm"></i> <br></br>
+                            <p>Rentals: Available</p>
+                            <p>Tours: Unavailable</p>
+                            <a href="https://www.pedegoelectricbikes.com/dealers/henderson/" class="btn btn-primary btn-sm">Go somewhere</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md">
+                    <div class="card bg-light" id="rei">
+                        <div class="card-body">
+                            <h5 class="card-title">REI</h5>
+                            <span class="card-text">Price: </span><i class="fa fa-usd fa-sm"></i><i class="fa fa-usd fa-sm"></i><br></br>
+                            <p>Rentals: Unavailable</p>
+                            <P>Tours: Available</P>
+                            <a href="https://www.rei.com/stores/henderson.html" class="btn btn-primary btn-sm">Go somewhere</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md">
+                    <div class="card bg-light" id="bicyclelab">
+                        <div class="card-body">
+                            <h5 class="card-title">The Bicycle Lab</h5>
+                            <span class="card-text">Price: </span><i class="fa fa-usd fa-sm"></i><br></br>
+                            <p>Rentals: Unavailable</p>
+                            <p>Tours: Unavailable</p>
+                            <a href="https://www.facebook.com/thebicyclelablv" class="btn btn-primary btn-sm">Go somewhere</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card bg-light" id="allmountaincyclery">
+                        <div class="card-body">
+                            <h5 class="card-title">All Mountain Cyclery</h5>
+                            <span class="card-text">Price: </span><i class="fa fa-usd fa-sm"></i><i class="fa fa-usd fa-sm"></i><br></br>
+                            <p>Rentals: Available</p>
+                            <p>Tours: Available</p>
+                            <a href="https://www.allmountaincyclery.com/" class="btn btn-primary btn-sm">Go somewhere</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md">
+                    <div class="card bg-light" id="dicks">
+                        <div class="card-body">
+                            <h5 class="card-title">Dick's Sporting Goods</h5>
+                            <span class="card-text">Price: </span><i class="fa fa-usd fa-sm"></i><br></br>
+                            <p>Rentals: Unavailable</p>
+                            <p>Tours: Unvavailable</p>
+                            <a href="https://stores.dickssportinggoods.com/nv/henderson/440/?seo=localpack" class="btn btn-primary btn-sm">Go somewhere</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md">
+                    <div class="card bg-light" id="big5">
+                        <div class="card-body">
+                            <h5 class="card-title">Big 5 Sporting Goods</h5>
+                            <span class="card-text">Price: </span><i class="fa fa-usd fa-sm"></i><br></br>
+                            <p>Rentals: Unavailable</p>
+                            <p>Tours: Unavailable</p>
+                            <a href="https://www.big5sportinggoods.com/store/" class="btn btn-primary btn-sm">Go somewhere</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card bg-light" id="giantlv">
+                        <div class="card-body">
+                            <h5 class="card-title">Giant Las Vegas</h5>
+                            <span class="card-text">Price: </span><i class="fa fa-usd fa-sm"></i><i class="fa fa-usd fa-sm"></i><br></br>
+                            <p>Rentals: Available</p>
+                            <p>Tours: Unavailable</p>
+                            <a href="https://www.giantlasvegas.com/" class="btn btn-primary btn-sm">Go somewhere</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                    <div class="card bg-light" id="velofix">
+                        <div class="card-body">
+                            <h5 class="card-title">Velofix</h5>
+                            <span class="card-text">Price: </span><i class="fa fa-usd fa-sm"></i><i class="fa fa-usd fa-sm"></i><i class="fa fa-usd fa-sm"></i><br></br>
+                            <p>Rentals: Available</p>
+                            <p>Tours: Unavailable</p>
+                            <a href="https://www.velofix.com/" class="btn btn-primary btn-sm">Go somewhere</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md">
+                    <div class="card bg-light" id="cyclegear">
+                        <div class="card-body">
+                            <h5 class="card-title">CycleGear</h5>
+                            <span class="card-text">Price: </span><i class="fa fa-usd fa-sm"></i><i class="fa fa-usd fa-sm"></i><br></br>
+                            <p>Rentals: Available</p>
+                            <p>Tours: Available</p>
+                            <a href="https://www.cyclegear.com/stores/cycle-gear-las-vegas-east-nevada-store-65" class="btn btn-primary btn-sm">Go somewhere</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card bg-light" id="proshop">
+                        <div class="card-body">
+                            <h5 class="card-title pt-3">ProShop Motorsports</h5>
+                            <span class="card-text">Price: </span><i class="fa fa-usd fa-sm"></i><i class="fa fa-usd fa-sm"></i><br></br>
+                            <p>Rentals: Available</p>
+                            <p>Tours: Available</p>
+                            <a href="https://www.proshoplv.com/" class="btn btn-primary btn-sm">Go somewhere</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                   
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">             
+                    <div class="col-12 col-md-4 text-center">
+                        <h5 class="footer-txt">Social</h5>
+                        <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/" id="footer-icon"><i class="fa fa-instagram"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/" id="footer-icon"><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/" id="footer-icon"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/" id="footer-icon"><i class="fa fa-youtube"></i></a>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <h5 class="footer-txt">Phone</h5>
+                        <a role="button" class="btn btn-link" href="tel:+18885555555" id="footer-contact"><i class="fa fa-phone"></i> 1-888-555-5555</a><br />
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <h5 class="footer-txt">Email</h5>
+                        <a role="button" class="btn btn-link" href="mailto:info@BikeVegas.com" id="footer-contact"><i class="fa fa-envelope-o"></i> info@BikeVegas.com</a>
+                    </div>                
+                 </div>
+            </div>
+        </footer>
+
+<!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="JS/bike.js"></script>
+
+</body>
+
+</html>
